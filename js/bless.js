@@ -353,7 +353,7 @@ let page3 = {
     // 得到上传的id
     let resp = await this.submit();
     // 得到要分享的网址
-    let url = `${location.origin}/smallCase/?${resp._id}`;
+    let url = `${location.origin}/greeting-card/?${resp._id}`;
     // 通过自定义工具包utils.share.createImg()方法生成可分享的图片，得到图片的base64数据。
     let imgSrc = await utils.share.createImg(
       "./assets/cover-bg.jpg",
