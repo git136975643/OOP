@@ -1,0 +1,142 @@
+.page-container {
+  height: 100%;
+}
+.page-container .page {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.page-container .page .hand-up {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0.83rem;
+  height: 0.64rem;
+  background: url("../assets/up.png") left top / 100%;
+}
+.page-container .page-first {
+  background: url("../assets/city.png") no-repeat bottom / 7.5rem 4.1rem, url("../assets/cover-bg.jpg") no-repeat top / 7.5rem 13.34rem #ae0806;
+}
+.page-container .page-first .g-btn {
+  position: absolute;
+  top: 7.4rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.page-container .page-second {
+  text-align: center;
+}
+.page-container .page-second .g-tape {
+  margin: 1rem auto 0;
+}
+.page-container .page-second .note {
+  position: absolute;
+  top: 5.3rem;
+  bottom: 1.3rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 5.6rem;
+  padding: 0.34rem;
+  font-size: 0.35rem;
+  border-radius: 5px;
+  background-color: #e8d7c6;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.page-container .page-second .note::before {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  top: -0.1rem;
+  width: 0.43rem;
+  height: 0.8rem;
+  background: url("../assets/note-attach.png") no-repeat left / 100%;
+}
+.page-container .page-second .note pre {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  white-space: break-spaces;
+}
+.page-container .page-third .bless-label {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 3.2rem;
+  height: 4.92rem;
+  background: url("../assets/bless-label.png") no-repeat left / 100%;
+  z-index: 2;
+}
+.page-container .page-third .g-paper {
+  position: absolute;
+  top: 7.62rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.page-container .page-third .g-paper .paper-content {
+  width: 3.97rem;
+  height: 0.79rem;
+  margin: 0 auto;
+  background: url("../assets/shaken.png") no-repeat left / 100%;
+}
+.page-container .page-third > .g-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.music {
+  position: fixed;
+  top: 0.7rem;
+  right: 0.3rem;
+  width: 0.59rem;
+  height: 0.59rem;
+  background: url("../assets/music.png") no-repeat left / 100%;
+  transition: 0.3s;
+  z-index: 99;
+  animation: duang 1s linear infinite;
+}
+@keyframes duang {
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+}
+.music.music-close {
+  opacity: 0.3;
+}
+.bless-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 4.95rem;
+  height: 7.26rem;
+  border-radius: 10px;
+  background: url("../assets/bless-card-slogan.png") no-repeat center 0.3rem / 4.09rem 0.41rem, url("../assets/letter-bg.png") repeat-y left top / 7.5rem 0.8rem;
+}
+.bless-card img {
+  max-width: 4.26rem;
+  max-height: 4.34rem;
+  margin-top: -1rem;
+}
+.close {
+  position: absolute;
+  top: 100%;
+  width: 0.63rem;
+  height: 1.19rem;
+  background: url("../assets/bless-card-close.png") no-repeat left top / 100% 100%;
+}
+.close .close-btn {
+  width: 0.64rem;
+  height: 0.64rem;
+  margin-top: 0.55rem;
+  border-radius: 50%;
+}

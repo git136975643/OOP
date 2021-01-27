@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 13.3333333vw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>bless you</title>
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- 第一屏 -->
+        <div class="page page-first">
+            <button class="g-btn">来自谁的祝福</button>
+            <div class="hand-up"></div>
+        </div>
+        <!-- 第二屏 -->
+        <div class="page page-second g-letter-bg">
+            <div class="g-tape "></div>
+            <button class="g-btn" data-default="true">播放祝福语音</button>
+            <div class="note">
+                <pre></pre>
+            </div>
+            <div class="hand-up"></div>
+        </div>
+        <!-- 第三屏 -->
+        <div class="page page-third g-letter-bg">
+            <div class="bless-label"></div>
+            <div class="g-paper">
+                <div class="paper-content"></div>
+            </div>
+            <button class="g-btn" data-default="true">我也要送祝福</button>
+            <div class="g-seal"></div>
+            <div class="g-modal">
+                <button data-default="true" class="g-btn">点击开启摇一摇</button>
+            </div>
+        </div>
+    </div>
+    <!-- 右上角音乐符号 -->
+    <div class="music" data-default="true"></div>
+    <!-- 祝福语音 -->
+    <audio id="soundAudio"></audio>
+    <!-- 背景音乐 -->
+    <audio id="bgAudio" loop crossOrigin="anonymous"></audio>
+    <!-- 摇一摇音频 -->
+    <audio id="shakenAudio" src="./assets/media/shaken.mp3" crossOrigin="anonymous"></audio>
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
